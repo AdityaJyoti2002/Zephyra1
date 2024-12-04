@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Ensure full height */
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #222; /* Set background color for the navbar */
+}
+
+.navbar .nav-link {
+    color: #412F26;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #fff; /* Add hover effect */
+}
+
+.navbar .icon {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    background: #2c2c54;
+    padding: 20px;
+    position: fixed;
+    height: 100vh; /* Full height for sidebar */
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #412F26;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.navbar-left a {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-left a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    flex: 1;
+    margin-left: 300px; /* Space for the sidebar */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Flexbox for Jewellery Section */
+.Jewellery2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items on mobile */
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on mobile */
+        position: relative;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0; /* No margin needed for content on mobile */
+    }
+
+    .Jewellery2 {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}

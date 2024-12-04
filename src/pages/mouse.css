@@ -1,0 +1,40 @@
+/* html, body{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    /* overflow: hidden; */
+x
+body{
+    /* background-image: url(""); */
+    cursor: url("arrowhead-rounded-outline.svg"), auto;
+}
+
+i{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    /* background: rgb(255, 47, 241); */
+    /* background: #FBE4E5; */
+    /* background: rgb(236, 4, 232); */
+    background: #f49ccc;
+    animation: animate 2s linear forwards;
+
+}
+/* .cursor{
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: ;
+} */
+
+@keyframes animate{
+    0%{
+        opacity: 1;
+        transform: translate( 0, 0);
+
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+
+    }
+}
